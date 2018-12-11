@@ -8,6 +8,13 @@ var h1 = document.querySelector("h1");
 var resetButton = document.querySelector("#reset");
 var modeButtons = document.querySelectorAll(".mode");
 
+init();
+
+function init() {
+    setupModeButtons();
+    setupSquares();
+    reset();
+}
 
 function setupModeButtons() {
     for (var i = 0; i < modeButtons.length; i++) {
