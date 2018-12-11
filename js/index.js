@@ -78,3 +78,15 @@ function changeColors(color) {
         squares[i].style.backgroundColor = color
     }
 }
+
+function generateRandomColors(num) {
+    //make an array
+    var arr = []
+        //repeat num times
+    for (var i = 0; i < num; i++) {
+        //get random color and push into arr
+        arr.push(randomColor())
+    }
+    //return that array
+    return arr;
+}
