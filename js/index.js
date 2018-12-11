@@ -73,9 +73,16 @@ resetButton.addEventListener("click", function() {
 })
 
 function changeColors(color) {
-    for (let i = 0; i < squares.length; i++) {
-        squares[i].style.backgroundColor = color
+    //loop through all squares
+    for (var i = 0; i < squares.length; i++) {
+        //change each color to match given color
+        squares[i].style.background = color;
     }
+}
+
+function pickColor() {
+    var random = Math.floor(Math.random() * colors.length);
+    return colors[random];
 }
 
 function generateRandomColors(num) {
@@ -88,11 +95,6 @@ function generateRandomColors(num) {
     }
     //return that array
     return arr;
-}
-
-function pickColor() {
-    var random = Math.floor(Math.random() * colors.length);
-    return colors[random];
 }
 
 function randomColor() {
