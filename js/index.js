@@ -1,13 +1,12 @@
-var numberOfSquares = 6;
-var colors = generateRandomColors(numberOfSquares);
+var numSquares = 6;
+var colors = [];
+var pickedColor;
 var squares = document.querySelectorAll(".square");
-var pickedColor = pickColor();
-var colorDisplay = document.getElementById("colorDisplay")
-var messageDisplay = document.getElementById("message");
+var colorDisplay = document.getElementById("colorDisplay");
+var messageDisplay = document.querySelector("#message");
 var h1 = document.querySelector("h1");
 var resetButton = document.querySelector("#reset");
-var easyBtn = document.querySelector("#easyBtn");
-var hardBtn = document.querySelector("#hardBtn");
+var modeButtons = document.querySelectorAll(".mode");
 
 easyBtn.addEventListener("click", function() {
     hardBtn.classList.remove("selected");
