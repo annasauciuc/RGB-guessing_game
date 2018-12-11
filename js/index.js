@@ -91,6 +91,11 @@ function generateRandomColors(num) {
     return arr;
 }
 
+function pickColor() {
+    var random = Math.floor(Math.random() * colors.length);
+    return colors[random];
+}
+
 function randomColor() {
     //pick a "red" from 0 - 255
     var r = Math.floor(Math.random() * 256);
