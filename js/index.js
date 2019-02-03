@@ -11,12 +11,14 @@ var modeButtons = document.querySelectorAll(".mode");
 init();
 
 function init() {
+    console.log('init :');
     setupModeButtons();
     setupSquares();
     reset();
 }
 
 function setupModeButtons() {
+    console.log('buttons :');
     for (var i = 0; i < modeButtons.length; i++) {
         modeButtons[i].addEventListener("click", function() {
             modeButtons[0].classList.remove("selected");
@@ -29,6 +31,7 @@ function setupModeButtons() {
 }
 
 function setupSquares() {
+    console.log('squares :');
     for (var i = 0; i < squares.length; i++) {
         //add click listeners to squares
         squares[i].addEventListener("click", function() {
@@ -41,7 +44,7 @@ function setupSquares() {
                 changeColors(clickedColor);
                 h1.style.background = clickedColor;
             } else {
-                this.style.background = "#232323";
+                this.style.background = "#FFF";
                 messageDisplay.textContent = "Try Again"
             }
         });
@@ -49,6 +52,7 @@ function setupSquares() {
 }
 
 function reset() {
+    console.log('reset :' );
     colors = generateRandomColors(numSquares);
     //pick a new random color from array
     pickedColor = pickColor();
@@ -73,6 +77,7 @@ resetButton.addEventListener("click", function() {
 })
 
 function changeColors(color) {
+    console.log('changecolor :', );
     //loop through all squares
     for (var i = 0; i < squares.length; i++) {
         //change each color to match given color
@@ -98,6 +103,7 @@ function generateRandomColors(num) {
 }
 
 function randomColor() {
+    console.log('randomcolor :');
     //pick a "red" from 0 - 255
     var r = Math.floor(Math.random() * 256);
     //pick a "green" from  0 -255

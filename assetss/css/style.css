@@ -1,10 +1,12 @@
 body {
-    background-color: #232323;
+    background-color: rgb(17, 14, 12);
+    background-size: cover;
     margin: 0;
     font-family: "Montserrat", "Avenir";
 }
 
 .square {
+    box-shadow: 5px 5px 15px 5px #000000;
     border-radius: 15%;
     width: 30%;
     background: purple;
@@ -37,14 +39,14 @@ h1 {
 }
 
 #stripe {
-    background-color: white;
+    background: url('./../images/backrgb.jpg');
     height: 30px;
     text-align: center;
     color: black;
 }
 
 .selected {
-    background-color: blue;
+    background-color: rgb(143, 143, 248);
 }
 
 button {
@@ -52,7 +54,7 @@ button {
     background-color: none;
     text-transform: uppercase;
     font-weight: 700;
-    color: steelblue;
+    color: rgb(31, 34, 36);
     height: 100%;
     letter-spacing: 1px;
     font-size: inherit;
