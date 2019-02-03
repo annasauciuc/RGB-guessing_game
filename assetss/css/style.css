@@ -41,8 +41,9 @@ h1 {
 #stripe {
     background: url('./../images/backrgb.jpg');
     height: 30px;
+    font-weight: 900;
     text-align: center;
-    color: black;
+    color: rgb(65, 63, 63);
 }
 
 .selected {
